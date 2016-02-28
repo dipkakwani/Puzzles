@@ -1,0 +1,51 @@
+Problem : Occurrences in a Range
+
+Given a range of numbers, find specific patterns in them and print the count of numbers that match the pattern. Patterns are of 3 type viz. Alternate, Consecutive and Wildcard. Each pattern is described as below
+
+Alternate: - The verb denoting Alternate is A. As the name suggests, alternate pattern requires detection of numbers which have specified digit in alternate place.
+
+Consecutive: - The verb denoting Consecutive is C. As the name suggests, consecutive pattern requires detection of numbers which has specified digit in required frequency appearing in consecutive manner.
+
+Wildcard: - The verb denoting Wildcard is W. As the name suggests, wildcard pattern requires detection of numbers in which 'W' character can be replaced by any digit.
+
+Input Format:
+
+    First line contains total number of test cases, denoted by N
+    Second line contains a range within which to detect the patterns. Range is provided in form of 2 numbers, viz. lower bound and upper bound, both inclusive, delimited by space.
+    Next N lines contain pattern queries where patterns are as described above. Input format of each pattern is described as below
+        A1 - denotes, find all numbers in the range which have digit 1 in alternate places
+        C21 - denotes, find all numbers in the range where digit 1 appears consecutively at least twice. Formally, this pattern follows grammar <C><frequency><digit>
+        1W - denotes, find all numbers in the range where 1 precedes any other digit. Read constraints section carefully before implementing this pattern.
+
+
+Output Format:
+
+For each test case, print count of numbers in the range matching the corresponding pattern. Print each count on a separate line.
+
+Constraints:
+
+1. When solving Wildcard query, the pattern always starts with a digit
+
+2. W character in wildcard query can be substituted by exactly one digit
+
+Sample Input and Output
+
+SNo.	Input	Output
+1 	
+5
+2 200
+A1
+C22
+9W
+1W2
+1WW
+
+	
+10
+2
+10
+10
+100
+
+
+

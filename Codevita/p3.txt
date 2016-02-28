@@ -1,0 +1,66 @@
+Problem : Insect War
+
+Earth is now infested by Predators. These predators are of Insect species. These insects are trying to overcome human beings on earth. However since they are very small in size, they are failing to overpower humans. But now, one kind of insect is getting bigger in size in a very strange way.
+
+Initially there are 2 categories of insects. In first category each insect has size 'x' and second 'y'.
+
+Initially there are infinite numbers of insect of each category.
+
+An insect with size 's' can eat any other insect of size less than 's' in one minute. After eating, it's size will increase and it will mutate into an insect of another category of another size. E.g. If there is an insect of size 's' and it eats an insect of size 'w', where w < s. Then the new category insect will be of size s+w.
+
+Irrespective of its category, any bigger sized insect can eat at most 1 other insect of smaller size, in 1 minute.
+
+But there is one exception. Categories of insect with largest size can eat at most 2 insect in 1 minute. As noted previously, all others can eat only 1 insect in that minute.
+
+Refer example for more details.
+
+Humans are ready for the war. But they need just one help from you. They need to know the maximum size the insect can grow to, within t minutes.
+
+Input Format:
+
+First line contains total number of test cases, denoted by N
+Next N lines, contain a tuple <x, y, t> containing 3 values delimited by space, where
+
+    x denotes the size of each insect in first category.
+    y denotes the size of each insect in second category.
+    t denotes the time in minutes.
+
+
+Output Format:
+
+For each test case print one integer which denotes the maximum size of the insect after t minutes. As this number can be very large, print its remainder after dividing it by 1000000007.
+
+Constraints:
+
+1. 1<= x < y <= 10000000 (10 million)
+
+2. 2*x <= y
+
+3. 1<= t <= 1000000000000 (1 trillion)
+
+Sample Input and Output
+
+SNo.	Input	Output
+1 	
+2
+2 5 2
+3 7 2
+	
+23
+33
+
+
+Explanation:
+
+Test Case 1: initially there are insects of size 2 and 5.
+After 1 minute, there will be insects of sizes : ( 2, 5, 7, 9 )
+Initially, insects of size 5 are the largest.
+
+    If it eats insect of size '2' then it will become a new insect of size '7'.
+    If it eats two insects of size 2, then it will become a new insect of size 9 (5 + 2 + 2 = 9).
+
+After 2 minutes, there will be insects of size:
+(2, 5, 7, 9, 11, 12, 13, 14, 16, 18, 19, 21, 23)
+
+So, after 2 minutes, the maximum size of insect is 23.
+

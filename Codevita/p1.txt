@@ -1,0 +1,54 @@
+Problem : Image Segmentation
+
+Consider an image represented using grid of height H and width W. This image consists of blobs. A blob is a collection of contiguous lit pixels. A non-lit pixel is represented using '.' and a lit pixel is represented using '#'.
+
+In 2D, pixels are said to be contiguous if they are 8-way connected. Refer [wiki] for more details on how connections are represented mathematically.
+
+Your task is to find the number of blobs in given grid. Also, state the number of lit pixels in each blob.
+
+Input Format:
+
+First line contains T, number of test cases.
+
+Each test case consists of:
+
+    Grid dimensions : - Two integers H (height) and W (width)
+    The Grid : - Next H lines each comprising of W characters {'.' | '#'}
+
+
+Output Format:
+
+For each test case print two lines.
+
+First line should contain the number of blobs.
+
+Second line should contain number of lit pixels in those blobs in sorted order (smallest first) delimited by space.
+
+Constraints:
+
+1. 1 <= T <= 10
+
+2. 1 <= H <= 1000
+
+3. 1 <= W <= 1000
+
+Sample Input and Output
+
+SNo.	Input	Output
+1	
+1
+6 6
+#...#.
+.#.#.#
+##..#.
+......
+.#.#.#
+#...#.
+	
+4
+2 3 4 4
+
+
+Note:
+
+
