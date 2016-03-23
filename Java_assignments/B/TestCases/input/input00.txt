@@ -1,0 +1,15 @@
+4
+3
+a
+a
+a
+4
+ab
+aab
+baa
+ab
+1
+a
+2
+a
+a
