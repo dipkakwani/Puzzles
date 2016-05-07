@@ -1,5 +1,8 @@
 # Binary files
 *.out
+*.class
+
+*.pyc
 
 # Temp files
 *.swp
